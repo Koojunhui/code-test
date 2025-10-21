@@ -9,7 +9,7 @@ def solution(food_times, k):
     if sum(food_times) <= k:
         return -1
 
-    # (음식시간, 음식번호) 형태로 최소 힙 구성
+    # (음식시간, 음식번호) 형태로 최소 힙(Heap) 구성
     hq = []
     for i in range(len(food_times)):
         heapq.heappush(hq, (food_times[i], i + 1))

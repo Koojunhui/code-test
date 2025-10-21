@@ -2,7 +2,7 @@ import heapq
 
 
 def solution(scoville, K):
-    heapq.heapify(scoville)  # 최소 힙 생성
+    heapq.heapify(scoville)  # 최소 힙(Heap) 생성
     mix_count = 0
 
     while scoville:
